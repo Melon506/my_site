@@ -1,0 +1,22 @@
+{
+  "generator": "personal-site static builder",
+  "version": "1.0.0",
+  "site_title": "我的小站",
+  "built_at_utc": "2026-11-19T10:04:21+00:00",
+  "built_at_local": "2026-11-19 18:04:21",
+  "timezone": "Asia/Shanghai",
+  "data_snapshot": "2026-11-19 18:04:21",
+  "include_expenses": true,
+  "stats": {
+    "files": 13,
+    "total_bytes": 45241,
+    "posts": 3,
+    "expenses": 14
+  },
+  "environment": {
+    "python": "3.14.3",
+    "sqlite": "3.50.4",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "schema_version": 1
+  }
+}

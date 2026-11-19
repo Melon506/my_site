@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>关于 · 我的小站</title>
+<meta name="description" content="记录日常消费与随手想法的地方。">
+<meta name="generator" content="personal-site static builder 1.0.0">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">我的小站</a>
+  <div class="topbar-right"><nav class="nav"><a class="nav-link" href="index.html">首页</a><a class="nav-link" href="expenses.html">记账</a><a class="nav-link" href="posts/index.html">文章</a><a class="nav-link active" href="about.html">关于</a></nav></div>
+</header>
+<main class="container">
+<section class="panel">
+  <h1>关于本站</h1>
+  <p class="lead">这是一个纯静态的个人网站：记账记录与个人文章，构建时一次性生成，浏览时不依赖任何后端服务。</p>
+
+  <h2>站点信息</h2>
+  <table class="kv">
+    <tbody>
+      <tr><th>站点名称</th><td>我的小站</td></tr>
+      <tr><th>站长</th><td>站长</td></tr>
+      <tr><th>站点类型</th><td>纯静态站点（HTML + CSS + JavaScript，无服务端）</td></tr>
+      <tr><th>站点版本</th><td>1.0.0</td></tr>
+      <tr><th>页面总数</th><td>14 个文件，合计 44.7 KB</td></tr>
+    </tbody>
+  </table>
+
+  <h2>搭建所用程序</h2>
+  <table class="kv">
+    <tbody>
+      <tr><th>内容生成</th><td>Python 3.14.3 + 标准库静态构建器</td></tr>
+      <tr><th>数据源</th><td>SQLite 3.50.4（构建时读取，站点本身不含数据库）</td></tr>
+      <tr><th>Markdown 渲染</th><td>自研轻量渲染器（先转义再解析）</td></tr>
+      <tr><th>前端</th><td>原生 HTML + CSS + JavaScript，无框架、无构建步骤</td></tr>
+      <tr><th>构建环境</th><td>Windows-11-10.0.26200-SP0（AMD64）</td></tr>
+    </tbody>
+  </table>
+
+  <h2>时间</h2>
+  <table class="kv">
+    <tbody>
+      <tr><th>构建时间</th><td>2026-11-19 18:04:21（CST / Asia/Shanghai）<span class="muted small">静态站的“后端时间”即最后一次构建时刻</span></td></tr>
+      <tr><th>数据快照</th><td>2026-11-19 18:04:21<span class="muted small">数据库最后一次修改时间</span></td></tr>
+      <tr><th>前端时间</th><td><span id="frontend-clock-2" class="clock">--:--:--</span><span class="muted small">你浏览器本地时间，每秒更新</span></td></tr>
+      <tr><th>说明</th><td>本站为静态导出，没有常驻后端，因此不存在实时服务器时间；页面时间以上述构建时间与快照时间为准。</td></tr>
+    </tbody>
+  </table>
+
+  <h2>内容统计</h2>
+  <table class="kv">
+    <tbody>
+      <tr><th>已发布文章</th><td>3 篇</td></tr>
+      <tr><th>消费记录</th><td>14 条</td></tr>
+    </tbody>
+  </table>
+
+  <p class="muted small">构建命令：<code>python -m app.main build</code>　生成器版本 1.0.0</p>
+</section>
+
+</main>
+<footer class="footer">
+  <span>© 2026 站长</span>
+  <span class="sep">·</span>
+  <a href="about.html">关于本站</a>
+  <span class="sep">·</span>
+  <span>静态站 · 构建于 2026-11-19 18:04:21</span>
+  <span class="sep">·</span>
+  <span id="frontend-clock" class="clock-muted">--:--:--</span>
+</footer>
+<script src="assets/site.js" defer></script>
+</body>
+</html>

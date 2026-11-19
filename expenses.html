@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>记账 · 我的小站</title>
+<meta name="description" content="记录日常消费与随手想法的地方。">
+<meta name="generator" content="personal-site static builder 1.0.0">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">我的小站</a>
+  <div class="topbar-right"><nav class="nav"><a class="nav-link" href="index.html">首页</a><a class="nav-link active" href="expenses.html">记账</a><a class="nav-link" href="posts/index.html">文章</a><a class="nav-link" href="about.html">关于</a></nav></div>
+</header>
+<main class="container">
+<section class="panel">
+  <div class="panel-head">
+    <h2>支出概览</h2>
+    <span class="mini">数据来自 2026-11-19 18:04:21</span>
+  </div>
+  <div class="stat-row">
+    <div class="stat"><span class="stat-value">¥2009.50</span><span class="stat-label">累计合计</span></div>
+    <div class="stat"><span class="stat-value">14</span><span class="stat-label">总笔数</span></div>
+    <div class="stat"><span class="stat-value">¥1879.00</span><span class="stat-label">2026-11 合计</span></div>
+  </div>
+  <div class="bars"><div class="bar-row"><span class="bar-label">居住</span><svg class="bar-track" viewBox="0 0 100 10" preserveAspectRatio="none" role="img" aria-label="居住 占比 74.6%"><rect x="0" y="0" width="74.6" height="10" rx="5"></rect></svg><span class="bar-value">¥1500.00</span></div><div class="bar-row"><span class="bar-label">购物</span><svg class="bar-track" viewBox="0 0 100 10" preserveAspectRatio="none" role="img" aria-label="购物 占比 9.2%"><rect x="0" y="0" width="9.2" height="10" rx="5"></rect></svg><span class="bar-value">¥185.00</span></div><div class="bar-row"><span class="bar-label">餐饮</span><svg class="bar-track" viewBox="0 0 100 10" preserveAspectRatio="none" role="img" aria-label="餐饮 占比 5.6%"><rect x="0" y="0" width="5.6" height="10" rx="5"></rect></svg><span class="bar-value">¥112.50</span></div><div class="bar-row"><span class="bar-label">学习</span><svg class="bar-track" viewBox="0 0 100 10" preserveAspectRatio="none" role="img" aria-label="学习 占比 4.4%"><rect x="0" y="0" width="4.4" height="10" rx="5"></rect></svg><span class="bar-value">¥89.00</span></div><div class="bar-row"><span class="bar-label">娱乐</span><svg class="bar-track" viewBox="0 0 100 10" preserveAspectRatio="none" role="img" aria-label="娱乐 占比 2.2%"><rect x="0" y="0" width="2.2" height="10" rx="5"></rect></svg><span class="bar-value">¥45.00</span></div><div class="bar-row"><span class="bar-label">交通</span><svg class="bar-track" viewBox="0 0 100 10" preserveAspectRatio="none" role="img" aria-label="交通 占比 1.6%"><rect x="0" y="0" width="1.6" height="10" rx="5"></rect></svg><span class="bar-value">¥33.00</span></div><div class="bar-row"><span class="bar-label">医疗</span><svg class="bar-track" viewBox="0 0 100 10" preserveAspectRatio="none" role="img" aria-label="医疗 占比 1.5%"><rect x="0" y="0" width="1.5" height="10" rx="5"></rect></svg><span class="bar-value">¥30.00</span></div><div class="bar-row"><span class="bar-label">其他</span><svg class="bar-track" viewBox="0 0 100 10" preserveAspectRatio="none" role="img" aria-label="其他 占比 1.0%"><rect x="0" y="0" width="1.0" height="10" rx="5"></rect></svg><span class="bar-value">¥15.00</span></div></div>
+</section>
+
+<section class="panel">
+  <div class="panel-head">
+    <h2>明细</h2>
+    <span class="mini" id="expense-count">14 条</span>
+  </div>
+
+  <div class="form-row filters" id="expense-filter" hidden>
+    <label class="field"><span>月份</span>
+      <select id="filter-month"><option value="">全部月份</option><option value="2026-11">2026-11</option><option value="2026-10">2026-10</option></select></label>
+    <label class="field"><span>分类</span>
+      <select id="filter-category"><option value="">全部分类</option><option value="餐饮">餐饮</option><option value="交通">交通</option><option value="购物">购物</option><option value="居住">居住</option><option value="医疗">医疗</option><option value="娱乐">娱乐</option><option value="学习">学习</option><option value="人情">人情</option><option value="其他">其他</option></select></label>
+    <label class="field grow"><span>关键词</span>
+      <input type="text" id="filter-kw" placeholder="备注或分类"></label>
+  </div>
+
+  <div class="table-wrap">
+    <table class="table" id="expense-table">
+      <thead><tr><th>日期</th><th>分类</th><th>金额</th><th>备注</th></tr></thead>
+      <tbody id="expense-rows"><tr><td>2026-11-14</td><td><span class="tag">其他</span></td><td class="amount">¥15.00</td><td class="note-cell">杂项</td></tr><tr><td>2026-11-12</td><td><span class="tag">医疗</span></td><td class="amount">¥30.00</td><td class="note-cell">感冒药</td></tr><tr><td>2026-11-11</td><td><span class="tag">购物</span></td><td class="amount">¥56.00</td><td class="note-cell">日用品</td></tr><tr><td>2026-11-09</td><td><span class="tag">餐饮</span></td><td class="amount">¥22.00</td><td class="note-cell">咖啡</td></tr><tr><td>2026-11-08</td><td><span class="tag">学习</span></td><td class="amount">¥89.00</td><td class="note-cell">技术书</td></tr><tr><td>2026-11-06</td><td><span class="tag">居住</span></td><td class="amount">¥1500.00</td><td class="note-cell">房租</td></tr><tr><td>2026-11-05</td><td><span class="tag">购物</span></td><td class="amount">¥129.00</td><td class="note-cell">耳机</td></tr><tr><td>2026-11-03</td><td><span class="tag">交通</span></td><td class="amount">¥6.00</td><td class="note-cell">地铁</td></tr><tr><td>2026-11-02</td><td><span class="tag">餐饮</span></td><td class="amount">¥32.00</td><td class="note-cell">和朋友吃饭</td></tr><tr><td>2026-10-13</td><td><span class="tag">餐饮</span></td><td class="amount">¥40.00</td><td class="note-cell">聚餐</td></tr><tr><td>2026-10-10</td><td><span class="tag">交通</span></td><td class="amount">¥3.00</td><td class="note-cell">公交</td></tr><tr><td>2026-10-07</td><td><span class="tag">娱乐</span></td><td class="amount">¥45.00</td><td class="note-cell">电影</td></tr><tr><td>2026-10-04</td><td><span class="tag">交通</span></td><td class="amount">¥24.00</td><td class="note-cell">打车</td></tr><tr><td>2026-10-01</td><td><span class="tag">餐饮</span></td><td class="amount">¥18.50</td><td class="note-cell">午饭</td></tr></tbody>
+    </table>
+  </div>
+  <noscript><p class="muted small">浏览器禁用脚本时，这里显示全部记录；开启脚本后可按月份/分类/关键词筛选。</p></noscript>
+
+  <p class="actions-row">
+    <a class="btn" href="data/expenses.csv" download>下载 CSV</a>
+    <a class="btn ghost" href="data/expenses.json" download>下载 JSON</a>
+  </p>
+</section>
+
+<script type="application/json" id="expense-data">[{"date": "2026-11-14", "category": "其他", "amount_cents": 1500, "note": "杂项"}, {"date": "2026-11-12", "category": "医疗", "amount_cents": 3000, "note": "感冒药"}, {"date": "2026-11-11", "category": "购物", "amount_cents": 5600, "note": "日用品"}, {"date": "2026-11-09", "category": "餐饮", "amount_cents": 2200, "note": "咖啡"}, {"date": "2026-11-08", "category": "学习", "amount_cents": 8900, "note": "技术书"}, {"date": "2026-11-06", "category": "居住", "amount_cents": 150000, "note": "房租"}, {"date": "2026-11-05", "category": "购物", "amount_cents": 12900, "note": "耳机"}, {"date": "2026-11-03", "category": "交通", "amount_cents": 600, "note": "地铁"}, {"date": "2026-11-02", "category": "餐饮", "amount_cents": 3200, "note": "和朋友吃饭"}, {"date": "2026-10-13", "category": "餐饮", "amount_cents": 4000, "note": "聚餐"}, {"date": "2026-10-10", "category": "交通", "amount_cents": 300, "note": "公交"}, {"date": "2026-10-07", "category": "娱乐", "amount_cents": 4500, "note": "电影"}, {"date": "2026-10-04", "category": "交通", "amount_cents": 2400, "note": "打车"}, {"date": "2026-10-01", "category": "餐饮", "amount_cents": 1850, "note": "午饭"}]</script>
+
+</main>
+<footer class="footer">
+  <span>© 2026 站长</span>
+  <span class="sep">·</span>
+  <a href="about.html">关于本站</a>
+  <span class="sep">·</span>
+  <span>静态站 · 构建于 2026-11-19 18:04:21</span>
+  <span class="sep">·</span>
+  <span id="frontend-clock" class="clock-muted">--:--:--</span>
+</footer>
+<script src="assets/site.js" defer></script>
+</body>
+</html>
